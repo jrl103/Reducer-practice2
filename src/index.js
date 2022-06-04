@@ -14,9 +14,10 @@ root.render(
     {/* 어떤 데이터를 가지고 있을지 store 주입시키기 */}
     {/* contextAPI : value 사용
     redux : store 사용 */}
+    {/* toolkit을 쓰든 리덕스 깡으로 쓰든 똑같음 */}
 
     <App />
-    
+
   </Provider>
 );
 

@@ -4,7 +4,8 @@ import {useSelector, useDispatch} from "react-redux"
 // useSelect : 데이터 구독, 참조
 // useDispatch : 액션 호출
 
-import { changeName } from "./redux/modules/cat";
+import { changeName } from "./redux/modules/cat"; // --> 일반 리덕스 
+// import {changeName} from "./redux/modules/catSlice" --> 툴킷
 
 function App() {
   const cat = useSelector(state => state.cat);

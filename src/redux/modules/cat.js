@@ -22,6 +22,9 @@ export default function reducer(state=initial_state, action={}){
         case "cat/CHANGE_NAME" : {
             return {...state, name : action.name}
             // 이름을 바꾸고 싶으면 action creator에 있는 name를 써줘야함
+            // ...스프레드 문법과 {} : 새 객체 만드는 것
+            // ---> 불변성 유지를 위해 직접 객체를 수정하지 않으려고
+            //      변경사항 반영한 새 객체 만들어서 넘겨주는 것
         }
         default :
         return state;
